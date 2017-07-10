@@ -4,6 +4,7 @@ package com.example.kawarashotaro.opencvpractise
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.widget.TextView
+import org.opencv.core.Mat
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,6 +13,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         // Example of a call to a native method
+        val mat = Mat()
         val tv = findViewById(R.id.sample_text) as TextView
         tv.text = stringFromJNI()
     }
